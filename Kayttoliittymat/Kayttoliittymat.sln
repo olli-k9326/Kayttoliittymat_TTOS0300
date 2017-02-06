@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kayttoliittymat", "Kayttoliittymat\Kayttoliittymat.csproj", "{5AC6DC6A-5E91-4D89-B0AD-0553370B332B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFhello", "..\..\OlioOhj\WPFhello\WPFhello.csproj", "{2AC85FDF-5EF4-4B64-8598-E3A8DFC2C384}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L9T2_euro-markka-laskuri", "L9T2_euro-markka-laskuri\L9T2_euro-markka-laskuri.csproj", "{D3D489D7-9D00-443F-BA63-BC8B9A94B11D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5AC6DC6A-5E91-4D89-B0AD-0553370B332B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AC6DC6A-5E91-4D89-B0AD-0553370B332B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AC6DC6A-5E91-4D89-B0AD-0553370B332B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AC6DC6A-5E91-4D89-B0AD-0553370B332B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AC85FDF-5EF4-4B64-8598-E3A8DFC2C384}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AC85FDF-5EF4-4B64-8598-E3A8DFC2C384}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AC85FDF-5EF4-4B64-8598-E3A8DFC2C384}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AC85FDF-5EF4-4B64-8598-E3A8DFC2C384}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3D489D7-9D00-443F-BA63-BC8B9A94B11D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3D489D7-9D00-443F-BA63-BC8B9A94B11D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3D489D7-9D00-443F-BA63-BC8B9A94B11D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3D489D7-9D00-443F-BA63-BC8B9A94B11D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

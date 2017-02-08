@@ -72,7 +72,7 @@ namespace L9T3_ikkuna_laskuri
 
                 KarmiP = 2 * (ikkunaL + ikkunaK) / 10;
 
-                if (ikkunaL - 2 * karmipuuW >= 0)
+                if ((ikkunaL - 2 * karmipuuW >= 0) && (ikkunaK - 2 * karmipuuW >= 0))
                 {
                     lasiPA = (ikkunaL - 2 * karmipuuW) * (ikkunaK - 2 * karmipuuW) / 100;
                 }

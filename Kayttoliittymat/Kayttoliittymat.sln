@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kayttoliittymat", "Kayttoliittymat\Kayttoliittymat.csproj", "{5AC6DC6A-5E91-4D89-B0AD-0553370B332B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L9T1_truck", "Kayttoliittymat\L9T1_truck.csproj", "{5AC6DC6A-5E91-4D89-B0AD-0553370B332B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFhello", "..\..\OlioOhj\WPFhello\WPFhello.csproj", "{2AC85FDF-5EF4-4B64-8598-E3A8DFC2C384}"
 EndProject

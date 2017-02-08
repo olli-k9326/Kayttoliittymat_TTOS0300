@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFhello", "..\..\OlioOhj\W
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L9T2_euro-markka-laskuri", "L9T2_euro-markka-laskuri\L9T2_euro-markka-laskuri.csproj", "{D3D489D7-9D00-443F-BA63-BC8B9A94B11D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L9T3_ikkuna-laskuri", "L9T3_ikkuna-laskuri\L9T3_ikkuna-laskuri.csproj", "{ABA4674F-C3E6-4EF4-832B-0C01E7E3B154}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{D3D489D7-9D00-443F-BA63-BC8B9A94B11D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3D489D7-9D00-443F-BA63-BC8B9A94B11D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3D489D7-9D00-443F-BA63-BC8B9A94B11D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABA4674F-C3E6-4EF4-832B-0C01E7E3B154}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABA4674F-C3E6-4EF4-832B-0C01E7E3B154}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABA4674F-C3E6-4EF4-832B-0C01E7E3B154}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABA4674F-C3E6-4EF4-832B-0C01E7E3B154}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

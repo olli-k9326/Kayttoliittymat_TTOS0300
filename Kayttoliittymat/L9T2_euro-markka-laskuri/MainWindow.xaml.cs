@@ -20,15 +20,56 @@ namespace L9T2_euro_markka_laskuri
     /// </summary>
     public partial class MainWindow : Window
     {
-
+        double converted;
+        double eurToMk = 5.94573;
+        bool start;
         public MainWindow()
         {
             InitializeComponent();
+            start = true;
+
         }
 
         private void textBoxEUR_Mk_TextChanged(object sender, TextChangedEventArgs e)
         {
-            textBoxEUR_Mk
+            
+            if (double.TryParse(Input.Text, out converted))
+            {
+                textBlockERROR.Text = " ";
+                converted *= eurToMk;
+                textBlockEUR_Mk_Result.Text = converted.ToString("0.00");
+            }
+            else if(start && Input.Text == "")
+            {
+                textBlockERROR.Text = "";
+                textBlockEUR_Mk_Result.Text = "";
+
+            }
+            else if(start)
+            {
+                textBlockERROR.Text = "Incorrect input. Use ',' as separator";
+            }
+        }
+
+        private void textBoxMk_EUR_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            
+            if (double.TryParse(textBoxMk_EUR.Text, out converted))
+            {
+                textBlockERROR.Text = " ";
+                converted /= eurToMk;
+                textBlockMk_EUR_Result.Text = converted.ToString("0.00");
+            }
+            else if(start && Input.Text == "")
+            {
+                textBlockERROR.Text = "";
+                textBlockMk_EUR_Result.Text = "";
+
+            }
+            else if(start)
+            {
+                textBlockERROR.Text = "Incorrect input. Use ',' as separator";
+            }
         }
     }
 }

@@ -6,12 +6,52 @@
         xmlns:local="clr-namespace:L9T2_euro_markka_laskuri"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid Background="#FFAC7F7F">
-        <TextBox x:Name="textBoxEUR_Mk" HorizontalAlignment="Left" Height="23" Margin="50,58,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="130" TextChanged="textBoxEUR_Mk_TextChanged"/>
-        <TextBlock x:Name="textBlockEUR_Mk" HorizontalAlignment="Left" Height="32" Margin="50,26,0,0" TextWrapping="Wrap" Text="EUR =&gt; Mk" VerticalAlignment="Top" Width="130" Background="#FF910606" Foreground="White"/>
-        <TextBlock x:Name="textBlockEUR_Mk_Result" HorizontalAlignment="Left" Height="49" Margin="50,114,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="120" Background="#FF06E5FB" FontSize="20"/>
-        <TextBox x:Name="textBoxMk_EUR" HorizontalAlignment="Left" Height="23" Margin="290,58,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="130" TextChanged="textBoxEUR_Mk_TextChanged"/>
-        <TextBlock x:Name="textBlockMk_EUR" HorizontalAlignment="Left" Height="32" Margin="290,26,0,0" TextWrapping="Wrap" Text="EUR =&gt; Mk" VerticalAlignment="Top" Width="130" Background="#FF910606" Foreground="White"/>
-        <TextBlock x:Name="textBlockMkEUR_Result" HorizontalAlignment="Left" Height="49" Margin="290,114,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="120" Background="#FF06E5FB" FontSize="20"/>
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="0"/>
+                <GradientStop Color="#FF911010" Offset="0.764"/>
+                <GradientStop Color="#FF2E2A2A" Offset="0.468"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="27*"/>
+            <ColumnDefinition Width="20*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="Input" HorizontalAlignment="Left" Height="23" Margin="50,58,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="130" TextChanged="textBoxEUR_Mk_TextChanged"/>
+        <TextBlock x:Name="textBlockEUR_Mk" HorizontalAlignment="Left" Height="32" Margin="50,26,0,0" TextWrapping="Wrap" Text="EUR =&gt; Mk" VerticalAlignment="Top" Width="130" Foreground="White">
+            <TextBlock.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBlock.Background>
+        </TextBlock>
+        <TextBlock x:Name="textBlockEUR_Mk_Result" HorizontalAlignment="Left" Height="49" Margin="50,114,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="172" FontSize="20" Foreground="White">
+            <TextBlock.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FFBB1212" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBlock.Background>
+        </TextBlock>
+        <TextBox x:Name="textBoxMk_EUR" HorizontalAlignment="Left" Height="23" Margin="2,58,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="130" TextChanged="textBoxMk_EUR_TextChanged" Grid.Column="1"/>
+        <TextBlock x:Name="textBlockMk_EUR" HorizontalAlignment="Left" Height="32" Margin="2,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130" Foreground="White" Grid.Column="1">
+            <TextBlock.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBlock.Background><Run Text="Mk "/><Run Text="=&gt; "/><Run Text="EUR"/></TextBlock>
+        <TextBlock x:Name="textBlockMk_EUR_Result" HorizontalAlignment="Left" Height="49" Margin="2,114,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="177" FontSize="20" Grid.Column="1">
+            <TextBlock.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFDE1212" Offset="0"/>
+                    <GradientStop Color="#FFFFBD0D" Offset="1"/>
+                    <GradientStop Color="#FEB89113" Offset="0.443"/>
+                </LinearGradientBrush>
+            </TextBlock.Background>
+        </TextBlock>
+        <TextBlock x:Name="textBlockERROR" HorizontalAlignment="Left" Margin="109,230,0,0" TextWrapping="Wrap" Text = "" VerticalAlignment="Top" Width="199" Height="29" Grid.ColumnSpan="2"/>
     </Grid>
 </Window>

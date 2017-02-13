@@ -20,7 +20,7 @@
                     <TextBlock x:Name="txbTemperatureText" Grid.Column="0" Text="Temperature" FontFamily="Cooper Black" FontSize="20" Foreground="#FF207C3D"/>
                     <TextBlock x:Name="txbTemperature" Grid.Column="2" Text="0" FontFamily="Cooper Black" FontSize="20" Foreground="#FF207C3D"/>
                 </Grid>
-                
+
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="auto"/>
@@ -30,7 +30,7 @@
                     <TextBlock x:Name="txbHumidityText" Grid.Column="0" Text="Temperature" FontFamily="Cooper Black" FontSize="20" Foreground="#FF207C3D"/>
                     <TextBlock x:Name="txbHumidity" Grid.Column="2" Text="0" FontFamily="Cooper Black" FontSize="20" Foreground="#FF207C3D"/>
                 </Grid>
-                
+
 
             </StackPanel>
             <StackPanel Margin="20">
@@ -48,34 +48,34 @@
                         <ColumnDefinition/>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
-                    <Button x:Name="btnNumber1" Grid.Row="0" Grid.Column="0" Content="1" Margin="5" Click="btnNumber_Click"/>
-                    <Button x:Name="btnNumber2" Grid.Row="0" Grid.Column="1" Content="2" Margin="5" Click="btnNumber_Click"/>
-                    <Button x:Name="btnNumber3" Grid.Row="0" Grid.Column="2" Content="3" Margin="5" Click="btnNumber_Click"/>
-                    <Button x:Name="btnNumber4" Grid.Row="1" Grid.Column="0" Content="4" Margin="5" Click="btnNumber_Click"/>
-                    <Button x:Name="btnNumber5" Grid.Row="1" Grid.Column="1" Content="5" Margin="5" Click="btnNumber_Click"/>
-                    <Button x:Name="btnNumber6" Grid.Row="1" Grid.Column="2" Content="6" Margin="5" Click="btnNumber_Click"/>
-                    <Button x:Name="btnNumber7" Grid.Row="2" Grid.Column="0" Content="7" Margin="5" Click="btnNumber_Click"/>
-                    <Button x:Name="btnNumber8" Grid.Row="2" Grid.Column="1" Content="8" Margin="5" Click="btnNumber_Click"/>
-                    <Button x:Name="btnNumber9" Grid.Row="2" Grid.Column="2" Content="9" Margin="5" Click="btnNumber_Click"/>
-                    <Button x:Name="btnNumber0" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"    Content="0"         Margin="5" Click="btnNumber_Click"/>
-                    <Button x:Name="btnCharDot" Grid.Row="3" Grid.Column="2"                        Content=","         Margin="5" Click="btnNumber_Click"/>
-                    <Button x:Name="btnErase"   Grid.Row="0" Grid.Column="3"                        Content="&lt;&#45;" Margin="5" Click="btnErase_Click"/>
-                    <Button x:Name="brnOK"      Grid.Row="1" Grid.Column="3" Grid.RowSpan="3"       Content="OK"        Margin="5" Click="brnOK_Click"/>
+                    <Button x:Name="btnNumber1" Grid.Row="0" Grid.Column="0" Content="1" Margin="5" Click="btnNumber_Click" Background="#FFF5A5A5"/>
+                    <Button x:Name="btnNumber2" Grid.Row="0" Grid.Column="1" Content="2" Margin="5" Click="btnNumber_Click" Background="#FFF5A5A5"/>
+                    <Button x:Name="btnNumber3" Grid.Row="0" Grid.Column="2" Content="3" Margin="5" Click="btnNumber_Click" Background="#FFF5A5A5"/>
+                    <Button x:Name="btnNumber4" Grid.Row="1" Grid.Column="0" Content="4" Margin="5" Click="btnNumber_Click" Background="#FFF5A5A5"/>
+                    <Button x:Name="btnNumber5" Grid.Row="1" Grid.Column="1" Content="5" Margin="5" Click="btnNumber_Click" Background="#FFF5A5A5"/>
+                    <Button x:Name="btnNumber6" Grid.Row="1" Grid.Column="2" Content="6" Margin="5" Click="btnNumber_Click" Background="#FFF5A5A5"/>
+                    <Button x:Name="btnNumber7" Grid.Row="2" Grid.Column="0" Content="7" Margin="5" Click="btnNumber_Click" Background="#FFF5A5A5"/>
+                    <Button x:Name="btnNumber8" Grid.Row="2" Grid.Column="1" Content="8" Margin="5" Click="btnNumber_Click" Background="#FFF5A5A5"/>
+                    <Button x:Name="btnNumber9" Grid.Row="2" Grid.Column="2" Content="9" Margin="5" Click="btnNumber_Click" Background="#FFF5A5A5"/>
+                    <Button x:Name="btnNumber0" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"    Content="0"         Margin="5" Click="btnNumber_Click" Background="#FFF5A5A5"/>
+                    <Button x:Name="btnCharDot" Grid.Row="3" Grid.Column="2"                        Content=","         Margin="5" Click="btnNumber_Click" Background="#FFF5A5A5"/>
+                    <Button x:Name="btnErase"   Grid.Row="0" Grid.Column="3"                        Content="&lt;&#45;" Margin="5" Click="btnErase_Click" Background="#FFB1B3EE"/>
+                    <Button x:Name="brnOK"      Grid.Row="1" Grid.Column="3" Grid.RowSpan="3"       Content="OK"        Margin="5" Click="brnOK_Click" Background="#FFFFF300"/>
 
 
 
                 </Grid>
 
                 <WrapPanel Margin="10">
-                    <RadioButton x:Name="rdbTemperature" Content="Temperature"/>
-                    <RadioButton x:Name="rdbHumidity" Content="Humidity" Margin="15 0 0 0"/>
+                    <RadioButton x:Name="rdbTemperature" Content="Temperature" FontFamily="Viner Hand ITC" FontSize="14"/>
+                    <RadioButton x:Name="rdbHumidity" Content="Humidity" Margin="15 0 0 0" FontFamily="Viner Hand ITC" FontSize="14"/>
                 </WrapPanel>
 
                 <TextBlock x:Name="txbInfo" TextWrapping="Wrap"/>
 
 
             </StackPanel>
-            
+
 
         </DockPanel>
     </Grid>

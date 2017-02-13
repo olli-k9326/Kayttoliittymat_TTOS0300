@@ -20,9 +20,7 @@ namespace L10T3_lottery
     /// </summary>
     public partial class MainWindow : Window
     {
-        int min;
-        int max;
-        int numbersInRow;
+        
         int rowAmount;
         public MainWindow()
         {
@@ -31,12 +29,20 @@ namespace L10T3_lottery
 
         private void btnDraw_Click(object sender, RoutedEventArgs e)
         {
-            LotteryRows rows = new LotteryRows();
-            
-            if (int.TryParse(txtDrawsNumber.Text, out rowAmount))
+            try
             {
-                rows.AddRandomRows(rowAmount, cmbGameType.Text);
-                txbRandomNumbersResult.Text = rows.ToString(); 
+                LotteryRows rows = new LotteryRows();
+
+                if (int.TryParse(txtDrawsNumber.Text, out rowAmount))
+                {
+                    rows.AddRandomRows(rowAmount, cmbGameType.Text);
+                    txbRandomNumbersResult.Text = rows.ToString();
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
             }
         }
         

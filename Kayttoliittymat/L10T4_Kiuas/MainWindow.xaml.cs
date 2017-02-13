@@ -25,6 +25,7 @@ namespace L10T4_Kiuas
         public MainWindow()
         {
             InitializeComponent();
+
         }
 
         private void btnNumber_Click(object sender, RoutedEventArgs e)

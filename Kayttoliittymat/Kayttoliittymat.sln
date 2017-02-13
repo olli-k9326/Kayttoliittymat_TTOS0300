@@ -23,6 +23,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testi", "Testi\Testi.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L10T4_Kiuas", "L10T4_Kiuas\L10T4_Kiuas.csproj", "{4F876990-52C1-4A6F-9A3A-402202B82B96}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demos", "Demos", "{9BC61F4C-49E8-4B92-8C17-B3A8F97FE2A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFDataBinding", "WPFDataBinding\WPFDataBinding.csproj", "{347A4065-AAAD-4823-BA80-9A298C567E97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BindingDemo", "BindingDemo\BindingDemo.csproj", "{F5539C24-1080-4886-8243-A4852F8DA0D4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,8 +75,20 @@ Global
 		{4F876990-52C1-4A6F-9A3A-402202B82B96}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F876990-52C1-4A6F-9A3A-402202B82B96}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F876990-52C1-4A6F-9A3A-402202B82B96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{347A4065-AAAD-4823-BA80-9A298C567E97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{347A4065-AAAD-4823-BA80-9A298C567E97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{347A4065-AAAD-4823-BA80-9A298C567E97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{347A4065-AAAD-4823-BA80-9A298C567E97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5539C24-1080-4886-8243-A4852F8DA0D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5539C24-1080-4886-8243-A4852F8DA0D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5539C24-1080-4886-8243-A4852F8DA0D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5539C24-1080-4886-8243-A4852F8DA0D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{347A4065-AAAD-4823-BA80-9A298C567E97} = {9BC61F4C-49E8-4B92-8C17-B3A8F97FE2A6}
+		{F5539C24-1080-4886-8243-A4852F8DA0D4} = {9BC61F4C-49E8-4B92-8C17-B3A8F97FE2A6}
 	EndGlobalSection
 EndGlobal

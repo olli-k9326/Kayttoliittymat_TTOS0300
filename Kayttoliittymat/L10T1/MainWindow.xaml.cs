@@ -30,6 +30,7 @@ namespace L10T1
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
+            
             txbShoppingList.Text = "";
             if(chk1.IsChecked == true)
             {
@@ -55,6 +56,7 @@ namespace L10T1
             {
                 txbShoppingList.Text += chk6.Content + "\n";
             }
+            
         }
     }
     

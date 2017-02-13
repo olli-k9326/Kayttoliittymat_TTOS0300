@@ -1,0 +1,53 @@
+﻿<Window x:Class="L10T3_lottery.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:L10T3_lottery"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="386.4" Width="271.133">
+    <Grid Background="#FFDA99FF">
+        <DockPanel Margin="10" >
+            <Grid Margin="10" DockPanel.Dock="Top">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock x:Name="txbChooseGame" Grid.Column="0" Text="Choose a game"/>
+                <ComboBox x:Name="cmbGameType" Grid.Column="2" Text="Lotto" Width="100">
+                    <ComboBoxItem>Lotto</ComboBoxItem>
+                    <ComboBoxItem>Viking Lotto</ComboBoxItem>
+                    <ComboBoxItem>Eurojackpot</ComboBoxItem>
+                </ComboBox>
+            </Grid>
+            <Grid Margin="10" DockPanel.Dock="Top">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="50"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock x:Name="txbDrawsNumber" Grid.Column="0" Text="Number of draws"/>
+                <TextBox x:Name="txtDrawsNumber" Grid.Column="2" Background="#FFE4E4E4"/>
+            </Grid>
+            <Grid Margin="10"  DockPanel.Dock="Top">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="btnDraw" Grid.Column="1" Content="Draw" Margin="10" Padding="3" Background="#FFEC7D7D" Click="btnDraw_Click"/>
+                <Button x:Name="btnClear" Grid.Column="3" Content="Clear" Margin="10" Padding="3" Background="#FFEC7D7D" Click="btnClear_Click"/>
+            </Grid>
+
+            <TextBlock x:Name="txbRandomNumbers"  Text="Random numbers:" Margin="10" DockPanel.Dock="Top"/>
+            <ScrollViewer>
+            <TextBlock x:Name="txbRandomNumbersResult" Margin="10 0"/>
+            </ScrollViewer>
+        </DockPanel>
+    </Grid>
+
+</Window>

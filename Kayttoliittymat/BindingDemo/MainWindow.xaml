@@ -6,7 +6,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BindingDemo"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="350" Width="672.746">
     <Window.Resources>
         <sys:String x:Key="MyAppName">Esan mahti sovellus v0.1</sys:String>
         <x:Array x:Key="myBands" Type="sys:String">
@@ -19,7 +19,7 @@
     </Window.Resources>
     <Grid >
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
+            <ColumnDefinition />
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
@@ -56,8 +56,21 @@
             <TextBox x:Name="txtName" Text="{Binding Path=Name}"/>
             <TextBox x:Name="txtCity" Text="{Binding Path=City}"/>
             <TextBlock x:Name="txbBindingCollection2" Text="JYP Jyväskylä" FontSize="14"/>
-            <Button x:Name="btnForward" Content="Seuraava" Click="btnForward_Click" />
-            <Button x:Name="btnBackward" Content="Edellinen" Click="btnBackward_Click" />
+            <WrapPanel>
+                <Button x:Name="btnBackward" Content="Edellinen" Click="btnBackward_Click" />
+                <Button x:Name="btnForward" Content="Seuraava" Click="btnForward_Click" Margin="20 0 0 0"/>
+            </WrapPanel>
+            <Separator Height="15" Background="Blue" BorderThickness="0" />
+            <TextBlock Text="Uuden joukkueen lisäys:"/>
+            <WrapPanel>
+                <TextBlock Text="- nimi:"/>
+                <TextBox x:Name="txtNewTeamName" MinWidth="130"/>
+            </WrapPanel>
+            <WrapPanel>
+                <TextBlock Text="- kaupunki:"/>
+                <TextBox x:Name="txtNewTeamCity" MinWidth="130"/>
+            </WrapPanel>
+            <Button x:Name="btnAddTeam" Content="Lisää joukkue liigaan" Click="btnAddTeam_Click" />
         </StackPanel>
 
     </Grid>

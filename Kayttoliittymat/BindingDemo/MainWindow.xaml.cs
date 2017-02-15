@@ -53,7 +53,7 @@ namespace BindingDemo
             HockeyTeam tiimi = new HockeyTeam("KeuPa", "Keuruu");
             //spRight.DataContext = tiimi;
             // demo2: kytketään olio-kokoelman 1.olioon
-            ChangeTeam();
+            chooseTeam(counter);
         }
 
         private void btnForward_Click(object sender, RoutedEventArgs e)
@@ -61,7 +61,7 @@ namespace BindingDemo
             if(counter < joukkueet.Count - 1)
             {
                 counter++;
-                ChangeTeam();
+                chooseTeam(counter);
             }
 
         }
@@ -71,13 +71,25 @@ namespace BindingDemo
             if (counter > 0)
             {
                 counter--;
-                ChangeTeam();
+                chooseTeam(counter);
             }
         }
-        private void ChangeTeam()
+        private void chooseTeam(int place)
         {
-            spRight.DataContext = joukkueet[counter];
+            spRight.DataContext = joukkueet[place];
         }
 
+        private void btnAddTeam_Click(object sender, RoutedEventArgs e)
+        {
+            HockeyTeam newTeam = new HockeyTeam(txtNewTeamName.Text, txtNewTeamCity.Text);
+            AddTeamToLeague(newTeam);
+            txtNewTeamName.Text = "";
+            txtNewTeamCity.Text = "";
+        }
+
+        private void AddTeamToLeague(HockeyTeam team)
+        {
+            joukkueet.Add(team);
+        }
     }
 }

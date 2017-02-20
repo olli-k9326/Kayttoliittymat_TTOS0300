@@ -48,7 +48,7 @@ namespace DataBindingT3
             tyontekijat = new ObservableCollection<Tyontekija>();
             tyontekijat.Add(new Vakituinen("140211-312I", "Åsa", "Pelkonen",      1, "Chief Executive", 6430.30f));
             tyontekijat.Add(new Vakituinen("130981-303A", "Mikko", "Himanen",     2, "Claims examiner", 3023.01f));
-            tyontekijat.Add(new Vakituinen("120383-8190", "Frans", "Takko",       3, "Forging machine setter", 1098.37f));
+            tyontekijat.Add(new Vakituinen("120383-8190", "Frans", "Takko",       3, "Forging machine setter", 3098.37f));
             tyontekijat.Add(new Vakituinen("021267-380H", "Tuija", "Poutiainen",  4, "Agricultural and food scientist", 3899.88f));
             LstTyontekijat.ItemsSource = tyontekijat;
         }

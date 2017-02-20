@@ -40,7 +40,7 @@ namespace DataBindingT3
 
         private void btnTyhjenna_Click(object sender, RoutedEventArgs e)
         {
-
+            LstTyontekijat.ItemsSource = null;
         }
 
         private void haeTyontekijat()

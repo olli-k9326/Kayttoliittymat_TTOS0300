@@ -81,10 +81,18 @@ namespace BindingDemo
 
         private void btnAddTeam_Click(object sender, RoutedEventArgs e)
         {
-            HockeyTeam newTeam = new HockeyTeam(txtNewTeamName.Text, txtNewTeamCity.Text);
-            AddTeamToLeague(newTeam);
-            txtNewTeamName.Text = "";
-            txtNewTeamCity.Text = "";
+            try
+            {
+                HockeyTeam newTeam = new HockeyTeam(txtNewTeamName.Text, txtNewTeamCity.Text);
+                AddTeamToLeague(newTeam);
+                txtNewTeamName.Text = "";
+                txtNewTeamCity.Text = "";
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         private void AddTeamToLeague(HockeyTeam team)

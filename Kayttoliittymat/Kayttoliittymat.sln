@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBindingT3", "DataBindin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVMDemo", "MVVMDemo\MVVMDemo.csproj", "{26D856D9-5D16-47BA-88F2-527138373A01}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeliKokeilu", "PeliKokeilu\PeliKokeilu.csproj", "{08A63DDD-9085-4D66-82F9-C5A1C5506C7E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -95,6 +97,10 @@ Global
 		{26D856D9-5D16-47BA-88F2-527138373A01}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26D856D9-5D16-47BA-88F2-527138373A01}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26D856D9-5D16-47BA-88F2-527138373A01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08A63DDD-9085-4D66-82F9-C5A1C5506C7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08A63DDD-9085-4D66-82F9-C5A1C5506C7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08A63DDD-9085-4D66-82F9-C5A1C5506C7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08A63DDD-9085-4D66-82F9-C5A1C5506C7E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

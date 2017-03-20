@@ -11,27 +11,34 @@ namespace JAMK.IT
     {
         public static List<JAMK.IT.Train> GetTrainsAt(string station)
         {
-            List<Train> trains = new List<Train>();
-            if (station == "testi" || station == "")
+            try
             {
+                List<Train> trains = new List<Train>();
+                if (station == "testi" || station == "")
+                {
 
-           
-            // vaihe 1: Placebo palauttaa oikean muotoista dataa.
-            // keksitään muutama juna.
-            Train tr = new Train();
-            tr.TrainNumber = "666";
-            tr.DepDate = new DateTime(2017, 3, 21);
-            tr.TargetStation = "Highway To Hell";
-            trains.Add(tr);
+
+                    // vaihe 1: Placebo palauttaa oikean muotoista dataa.
+                    // keksitään muutama juna.
+                    Train tr = new Train();
+                    tr.TrainNumber = "666";
+                    tr.DepDate = new DateTime(2017, 3, 21);
+                    tr.TargetStation = "Highway To Hell";
+                    trains.Add(tr);
+                }
+                else
+                {
+                    // Muutetaan haluttu json olio-kokoelmaksi
+                    string tmp = JAMK.IT.API.GetJsonFromLiikenneVirasto(station);
+                    trains = JsonConvert.DeserializeObject<List<Train>>(tmp);
+                }
+                // palautus
+                return trains;
             }
-            else
+            catch (Exception ex)
             {
-                // Muutetaan haluttu json olio-kokoelmaksi
-                string tmp = JAMK.IT.API.GetJsonFromLiikenneVirasto(station);
-                trains = JsonConvert.DeserializeObject<List<Train>>(tmp);
+                throw ex;
             }
-            // palautus
-            return trains;
         }
 
     }
